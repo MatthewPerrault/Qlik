@@ -15,3 +15,5 @@ Step 2: Transform
 Step 3: Final Model
   Load all .qvd table files from Transform
   -Build dashboard when all .wvd files are uploaded
+  - Final Model not included in this.
+  - Load .qvd files and replace fields with * to load all.
