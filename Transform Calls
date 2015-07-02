@@ -1,0 +1,34 @@
+//comment out the CALL section you do not want to load
+
+Trace --Loading Fact Table;
+CALL Fact
+
+Trace --Loadig Branch Table;
+CALL Branch
+
+Trace --Loading BranchType Table;
+CALL BranchType
+
+Trace --Loading Calendar Table;
+CALL Calendar
+
+Trace --Loading Company Table;
+Call Company
+
+Trace --Loading Customer Table;
+Call Customer
+
+Trace --Loading CustomerGroup Table;
+Call CustomerGroup
+
+Trace --Loading CustomerSite Table;
+Call CustomerSite
+
+Trace --Loading Division Table;
+Call Division
+
+Trace --Loading SalesCode Table;
+CALL SalesCode
+
+Trace --Loading Project Table;
+CALL Project
