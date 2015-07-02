@@ -1,0 +1,52 @@
+Sub Fact
+
+////*********************
+////  Table: Fact
+////  Key Fields:
+////  Changes/Comments:
+////*********************
+
+//ProjectPeriod
+Fact:
+LOAD 
+	 BCV, 
+     BExp, 
+     BGPP, 
+     CFI, 
+     Cost, 
+     FCV, 
+     FExp, 
+     FGPP, 
+     Invoiced, 
+     LVP, 
+     Period, 
+     ProjectID,
+     LEFT(ProjectID,3) as BranchID, 
+     ProjectPeriodMeasureID, 
+     RCV, 
+     RExp, 
+     RGPP
+FROM
+[\\dbi01\Documents - Unbrowsable\Sales\Extract\ProjectPeriod.qvd]
+(qvd);
+
+Concatenate (Fact)
+//AccountBudget
+LOAD AccountBudgetID, 
+     AccountID, 
+     AccountSubID, 
+     ActualAmount, 
+     //BranchID, 
+     BudgetAmount, 
+     BudgetGPAmount, 
+     CuryID, 
+     GLCompanyID, 
+     Period
+FROM
+[\\dbi01\Documents - Unbrowsable\Sales\Extract\AccountBudget.qvd]
+(qvd);
+
+Store Fact into Fact.qvd(qvd);
+
+END Sub
+
