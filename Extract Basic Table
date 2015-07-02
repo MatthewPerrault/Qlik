@@ -1,0 +1,18 @@
+Sub AccountBudget
+
+AccountBudget:
+SQL SELECT AccountBudgetID,
+    AccountID,
+    AccountSubID,
+    ActualAmount,
+    BranchID,
+    BudgetAmount,
+    BudgetGPAmount,
+    CuryID,
+    GLCompanyID,
+    Period
+FROM FlynnBI.dbo.AccountBudget;
+
+Store AccountBudget into AccountBudget.qvd(qvd);
+
+End Sub
