@@ -1,0 +1,20 @@
+SUB CustomerSite
+
+CustomerSite:
+LOAD 
+	 Address as CustomerAddress, 
+     City as CustomerCity, 
+     Country as CustomerCountry, 
+     CustomerID, 
+     CustomerSiteID, 
+     Postal as CustomerPostal, 
+     SiteID, 
+     SiteName, 
+     StateProv as CustomerStateProv
+FROM
+[\\dbi01\Documents - Unbrowsable\Sales\Extract\CustomerSite.qvd]
+(qvd);
+
+Store CustomerSite into CustomerSite.qvd(qvd);
+
+END SUB
