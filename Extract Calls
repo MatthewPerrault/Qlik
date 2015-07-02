@@ -1,0 +1,40 @@
+//Comment out ones you don't want to load
+
+Trace --Loading ARTran Table;
+Call ARTran
+
+Trace --Loading AccountBudget Table;
+CALL AccountBudget
+
+Trace --Loading ProjectPeriod Table;
+CALL ProjectPeriod
+
+Trace --Loading Branch Table;
+CALL Branch
+
+Trace --Loading BranchType Table;
+CALL BranchType
+
+Trace --Loading Calendar Table;
+CALL Calendar
+
+Trace --Loading Company Table;
+CALL Company
+
+Trace --Loading Customer Table;
+CALL Customer
+
+Trace --Loading CustomerGroup Table;
+CALL CustomerGroup
+
+Trace --Loading CustomerSite Table;
+CALL CustomerSite
+
+Trace --Loading Division Table;
+CALL Division
+
+Trace --Loading SalesCode Table;
+CALL SalesCode
+
+Trace --Loading Project Table;
+CALL Project
